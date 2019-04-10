@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    display: grid; 
+    grid-template-areas: "header header header header"
+                         "navbar navbar navbar navbar" /*forma mais facil de montar colunas e linhas no Grid*/
+                         "section section section aside" /* se colocar . vira uma area em branco, sem nada*/
+                         "footer footer footer footer";
+    grid-template-rows: 20vh 5vh 50vh 30vh;  /* define o tamanho das colunas*/
+    grid-gap: 2px;  /* deixa uma borda em todas as linhas*/ 
+
+}
+header{
+    grid-area: header;
+    background-color: pink;
+}
+nav{
+    grid-area: navbar;
+    background-color: plum;
+}
+section{
+    grid-area: section;
+    background-color: rgb(253, 231, 108);
+}
+aside{
+    grid-area: aside;
+    background-color: turquoise;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 159, 80);
+}
