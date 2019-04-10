@@ -1,31 +1,81 @@
 body{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
     display: grid; 
     grid-template-areas: "header header header header"
                          "navbar navbar navbar navbar" /*forma mais facil de montar colunas e linhas no Grid*/
                          "section section section aside" /* se colocar . vira uma area em branco, sem nada*/
                          "footer footer footer footer";
-    grid-template-rows: 20vh 5vh 50vh 30vh;  /* define o tamanho das colunas*/
+    grid-template-rows: 10vh 5vh 75vh 10vh;  /* define o tamanho das colunas*/
+    grid-template-columns: 25vw 25vw 25vw 25vw; /* define a largura das colunas*/
     grid-gap: 2px;  /* deixa uma borda em todas as linhas; pra trocar a cor da borda precisa trocar a cor do background*/ 
 
 }
 header{
     grid-area: header;
-    background-color: pink;
+    background-color: rgb(61, 6, 6);
+    display: flex;
+    align-items: center; /* alinhar na vertical */
+    justify-content: center;  /* alinhar na horizontal */
+    font-family: 'Righteous', cursive;
+    color: white;
+
+}
+header img{
+    height: 100%; /* altura */
+    width: auto;  /* largura */
 }
 nav{
     grid-area: navbar;
-    background-color: plum;
+    background-color: rgb(61, 6, 6);
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+}
+nav a:hover{
+    color: darkred;
+    text-decoration: underline;
 }
 section{
     grid-area: section;
-    background-color: rgb(253, 231, 108);
+    background-color: rgb(61, 6, 6);
+    background-size: cover;
+    background-image: url("https://media.metrolatam.com/2019/01/25/barra-062c333137122ce977f11b6cf61e3b89-1200x600.jpg");
 }
 aside{
     grid-area: aside;
-    background-color: turquoise;
+    background-color: rgb(61, 6, 6);
+    text-align: justify;
+    color: white;
+    padding:0px 10px;
+
+}
+aside h3{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+aside p{
+    font-size: 11.7pt;
 }
 footer{
     grid-area: footer;
-    background-color: rgb(255, 159, 80);
+    background-color:rgb(61, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 30px;
+    align-items: center;
+}
+footer div img{
+    width: 30px;
+    height: auto;
 }

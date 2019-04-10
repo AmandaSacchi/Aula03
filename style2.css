@@ -1,0 +1,10 @@
+body{
+    margin: 0; /*grid funcional para fazer calculadora por exemplo ou calendário, quando se tem muitos blocos*/
+    grid-template-columns: repeat(3, 100px); /*a COLUNA vai se repetir 3x cada uma com 100px*/
+    grid-template-rows: repeat(3, 200px) /*a LINHA vai se repetir 3x cada uma com 100px*/
+}
+head{
+    grid-column: 1; /*coluna 1*/
+    grid-row: 1; /*linha 1*/
+    background-color: red;
+}
