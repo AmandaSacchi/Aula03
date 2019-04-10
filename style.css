@@ -6,7 +6,7 @@ body{
                          "section section section aside" /* se colocar . vira uma area em branco, sem nada*/
                          "footer footer footer footer";
     grid-template-rows: 20vh 5vh 50vh 30vh;  /* define o tamanho das colunas*/
-    grid-gap: 2px;  /* deixa uma borda em todas as linhas*/ 
+    grid-gap: 2px;  /* deixa uma borda em todas as linhas; pra trocar a cor da borda precisa trocar a cor do background*/ 
 
 }
 header{
